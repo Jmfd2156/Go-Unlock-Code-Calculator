@@ -100,5 +100,5 @@ func alcatelC700(model string, imei string) []string {
 		"S853":modata["duck"]}
 	)
 	whichmodel := modeldb[model]
-	return strings.Fields("NCK:"+ alcatelC700Calc(imei,whichmodel[0],whichmodel[2], whichmodel[3]) + " SPCK:" + alcatelC700Calc(imei,whichmodel[1],whichmodel[2], whichmodel[3]))
+	return strings.Fields("NCK:"+ alcatelMW43TM(imei,whichmodel[0],whichmodel[2], whichmodel[3]) + " SPCK:" + alcatelC700Calc(imei,whichmodel[1],whichmodel[2], whichmodel[3]))
 }
